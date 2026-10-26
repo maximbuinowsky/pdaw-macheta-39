@@ -272,9 +272,8 @@ td.show {
 }
 
 .subscribe input {
-  border: none;
-  padding: 10px;
-  width: 250px;
+  box-sizing: border-box;
+    width: 100%;
 }
 
 /* Подвал */
@@ -305,4 +304,18 @@ footer nav a {
   border-top: 1px solid #3a2a2e;
   padding-top: 15px;
   font-size: 13px;
+}
+
+/* Плавающая кнопка */
+.fixed-btn {
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  z-index: 200;
+  background: #a51437;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 30px;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
