@@ -20,6 +20,7 @@
       <a href="#" class="active">Acasă</a>
       <a href="#spectacole">Spectacole</a>
       <a href="#afis">Afiș</a>
+      <a href="#">Trupa</a>
       <a href="#">Contact</a>
     </nav>
     <a class="btn" href="#spectacole">Cumpără bilet</a>
@@ -43,40 +44,83 @@
     <div><b>31</b> de stagiuni</div>
   </div>
 
+  <!-- О нас -->
+  <section class="pink">
+    <small>DESPRE NOI</small>
+    <h2>Un teatru aproape de public</h2>
+    <div class="about">
+      <div>
+        <span>01</span>
+        <h3>Bilete online</h3>
+        <p>Alegi locul din schema sălii și plătești cu cardul.</p>
+      </div>
+      <div>
+        <span>02</span>
+        <h3>Reduceri pentru elevi</h3>
+        <p>50% pentru elevi și studenți la orice spectacol.</p>
+      </div>
+      <div>
+        <span>03</span>
+        <h3>Foaier cu cafenea</h3>
+        <p>Ceai și prăjituri în pauză și după spectacol.</p>
+      </div>
+    </div>
+  </section>
+
   <!-- Спектакли -->
   <section id="spectacole">
+    <small>REPERTORIU</small>
     <h2>Spectacole în această lună</h2>
     <div class="cards">
 
       <div class="card">
         <img src="https://picsum.photos/seed/hamlet/400/300">
         <h3>Hamlet</h3>
-        <p>dramă · 2 h 40 min</p>
-        <p class="price">150 lei</p>
-        <a class="btn" href="#">Bilet</a>
+        <div class="info">dramă · 2 h 40 min</div>
+        <div class="bottom"><span class="price">150 lei</span><a class="btn" href="#">Bilet</a></div>
       </div>
 
       <div class="card">
         <img src="https://picsum.photos/seed/revizorul/400/300">
         <h3>Revizorul</h3>
-        <p>comedie · 2 h 10 min</p>
-        <p class="price">120 lei</p>
-        <a class="btn" href="#">Bilet</a>
+        <div class="info">comedie · 2 h 10 min</div>
+        <div class="bottom"><span class="price">120 lei</span><a class="btn" href="#">Bilet</a></div>
       </div>
 
       <div class="card">
         <img src="https://picsum.photos/seed/pescarusul/400/300">
         <h3>Pescărușul</h3>
-        <p>dramă · 2 h 20 min</p>
-        <p class="price">130 lei</p>
-        <a class="btn" href="#">Bilet</a>
+        <div class="info">dramă · 2 h 20 min</div>
+        <div class="bottom"><span class="price">130 lei</span><a class="btn" href="#">Bilet</a></div>
+      </div>
+
+      <div class="card">
+        <img src="https://picsum.photos/seed/capra/400/300">
+        <h3>Capra cu trei iezi</h3>
+        <div class="info">pentru copii · 50 min</div>
+        <div class="bottom"><span class="price">60 lei</span><a class="btn" href="#">Bilet</a></div>
+      </div>
+
+      <div class="card">
+        <img src="https://picsum.photos/seed/dineu/400/300">
+        <h3>Dineu cu proști</h3>
+        <div class="info">comedie · 1 h 50 min</div>
+        <div class="bottom"><span class="price">100 lei</span><a class="btn" href="#">Bilet</a></div>
+      </div>
+
+      <div class="card">
+        <img src="https://picsum.photos/seed/poezie/400/300">
+        <h3>Seară de poezie</h3>
+        <div class="info">recital · 1 h 15 min</div>
+        <div class="bottom"><span class="price">80 lei</span><a class="btn" href="#">Bilet</a></div>
       </div>
 
     </div>
   </section>
 
   <!-- Расписание -->
-  <section id="afis">
+  <section class="pink" id="afis">
+    <small>AFIȘ</small>
     <h2>Afișul săptămânii</h2>
     <table>
       <tr>
@@ -96,12 +140,28 @@
         <td class="show">Micul prinț</td>
       </tr>
       <tr>
+        <td>16:00</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="show">Pescărușul</td>
+        <td class="show">Recital</td>
+      </tr>
+      <tr>
         <td>18:30</td>
         <td class="show">Revizorul</td>
         <td class="show">Dineu</td>
         <td class="show">Hamlet</td>
         <td></td>
         <td class="show">Hamlet</td>
+      </tr>
+      <tr>
+        <td>20:00</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="show">Furtunoasa</td>
+        <td></td>
       </tr>
     </table>
   </section>
