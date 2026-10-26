@@ -244,10 +244,63 @@ td.show {
   font-weight: bold;
 }
 
+/* Подписка */
+.subscribe {
+  background: #a51437;
+  color: white;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.subscribe h2 {
+  margin: 0 0 5px 0;
+  font-size: 26px;
+}
+
+.subscribe p {
+  margin: 0;
+}
+
+.subscribe form {
+  background: white;
+  padding: 5px;
+  border-radius: 6px;
+}
+
+.subscribe input {
+  border: none;
+  padding: 10px;
+  width: 250px;
+}
+
 /* Подвал */
 footer {
   background: #1c0a10;
-  color: white;
+  color: #b9a9ae;
   text-align: center;
-  padding: 20px;
+  padding: 40px 20px 20px 20px;
+}
+
+footer .logo {
+  color: white;
+}
+
+footer .logo span {
+  color: #b85a0b;
+}
+
+footer nav {
+  margin: 20px 0;
+}
+
+footer nav a {
+  color: white;
+}
+
+.copy {
+  border-top: 1px solid #3a2a2e;
+  padding-top: 15px;
+  font-size: 13px;
 }
