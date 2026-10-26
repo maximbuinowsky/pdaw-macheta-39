@@ -1,7 +1,26 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  color: #333;
+  color: #2a1a1f;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3, .logo {
+  font-family: Georgia, serif;
+}
+
+/* Верхняя полоса */
+.topbar {
+  background: #1c0a10;
+  color: #ddd;
+  font-size: 13px;
+  padding: 8px 40px;
+  display: flex;
+  justify-content: space-between;
 }
 
 /* Шапка */
@@ -13,23 +32,44 @@ header {
   align-items: center;
 }
 
-header h2 {
-  margin: 0;
+.logo {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.logo span {
   color: #a51437;
 }
 
 nav a {
-  margin: 0 10px;
-  color: #333;
-  text-decoration: none;
+  margin: 0 12px;
+  color: #7a6a70;
 }
 
-.button {
+nav a.active {
+  color: #a51437;
+  font-weight: bold;
+}
+
+/* Кнопки */
+.btn {
+  display: inline-block;
   background: #a51437;
   color: white;
   padding: 10px 20px;
-  text-decoration: none;
   border-radius: 5px;
+  font-weight: bold;
+  border: none;
+}
+
+.orange {
+  background: #b85a0b;
+}
+
+.white {
+  background: none;
+  border: 2px solid white;
+  padding: 8px 18px;
 }
 
 /* Главный баннер */
@@ -37,20 +77,51 @@ nav a {
   background: #3a1a22;
   color: white;
   text-align: center;
-  padding: 100px 20px;
+  padding: 100px 20px 120px;
+}
+
+.badge {
+  background: #b85a0b;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: bold;
 }
 
 .hero h1 {
-  font-size: 44px;
-  margin: 0 0 15px 0;
+  font-size: 48px;
+  margin: 25px 0 15px 0;
 }
 
-.hero span {
-  color: orange;
+.hero h1 span {
+  color: #e08a30;
 }
 
 .hero p {
-  margin-bottom: 25px;
+  margin-bottom: 30px;
+}
+
+/* Цифры */
+.stats {
+  background: white;
+  width: 700px;
+  margin: -50px auto 0 auto;
+  padding: 25px 0;
+  display: flex;
+  text-align: center;
+  border-radius: 8px 8px 0 0;
+}
+
+.stats div {
+  width: 25%;
+  color: #7a6a70;
+}
+
+.stats b {
+  display: block;
+  font-size: 32px;
+  font-family: Georgia, serif;
+  color: #a51437;
 }
 
 /* Общие блоки */

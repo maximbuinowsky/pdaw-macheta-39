@@ -7,54 +7,75 @@
 </head>
 <body>
 
+  <!-- Верхняя полоса -->
+  <div class="topbar">
+    <span>0231 6 44 80 · bilete@cortina.md</span>
+    <span>Casa de bilete: 11:00–19:00</span>
+  </div>
+
+  <!-- Шапка -->
   <header>
-    <h2>Cortina</h2>
+    <div class="logo">🎭 Cor<span>tina</span></div>
     <nav>
-      <a href="#">Acasă</a>
+      <a href="#" class="active">Acasă</a>
       <a href="#spectacole">Spectacole</a>
       <a href="#afis">Afiș</a>
       <a href="#">Contact</a>
     </nav>
-    <a class="button" href="#spectacole">Cumpără bilet</a>
+    <a class="btn" href="#spectacole">Cumpără bilet</a>
   </header>
 
+  <!-- Главный баннер -->
   <div class="hero">
-    <h1>Seri de <span>teatru</span><br>pe care nu le uiți</h1>
-    <p>Teatru independent din Bălți, cu o sală de 180 de locuri.</p>
-    <a class="button" href="#spectacole">Vezi afișul</a>
+    <span class="badge">Stagiunea 2026–2027</span>
+    <h1>Seri de <span>teatru</span> pe<br>care nu le uiți</h1>
+    <p>Teatru independent din Bălți, cu o sală de 180 de locuri.<br>
+       Montăm clasici, autori contemporani și spectacole pentru copii.</p>
+    <a class="btn orange" href="#spectacole">Vezi afișul</a>
+    <a class="btn white" href="#afis">Abonament</a>
   </div>
 
+  <!-- Цифры -->
+  <div class="stats">
+    <div><b>12</b> premiere</div>
+    <div><b>180</b> locuri în sală</div>
+    <div><b>24</b> actori în trupă</div>
+    <div><b>31</b> de stagiuni</div>
+  </div>
+
+  <!-- Спектакли -->
   <section id="spectacole">
     <h2>Spectacole în această lună</h2>
     <div class="cards">
 
       <div class="card">
-        <img src="">
+        <img src="https://picsum.photos/seed/hamlet/400/300">
         <h3>Hamlet</h3>
         <p>dramă · 2 h 40 min</p>
         <p class="price">150 lei</p>
-        <a class="button" href="#">Bilet</a>
+        <a class="btn" href="#">Bilet</a>
       </div>
 
       <div class="card">
-        <img src="">
+        <img src="https://picsum.photos/seed/revizorul/400/300">
         <h3>Revizorul</h3>
         <p>comedie · 2 h 10 min</p>
         <p class="price">120 lei</p>
-        <a class="button" href="#">Bilet</a>
+        <a class="btn" href="#">Bilet</a>
       </div>
 
       <div class="card">
-        <img src="">
+        <img src="https://picsum.photos/seed/pescarusul/400/300">
         <h3>Pescărușul</h3>
         <p>dramă · 2 h 20 min</p>
         <p class="price">130 lei</p>
-        <a class="button" href="#">Bilet</a>
+        <a class="btn" href="#">Bilet</a>
       </div>
 
     </div>
   </section>
 
+  <!-- Расписание -->
   <section id="afis">
     <h2>Afișul săptămânii</h2>
     <table>
