@@ -4,6 +4,33 @@ body {
   color: #2a1a1f;
 }
 
+.hero {
+  background-color: #3a1a22; /* Цвет на случай, если картинка будет грузиться */
+  color: white;
+  text-align: center;
+  padding: 100px 20px 120px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Картинка как фон через HTML */
+.hero-bg-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  filter: brightness(0.45); /* Затемнение картинки, чтобы текст был читаемым */
+}
+
+/* Контент внутри баннера поверх картинки */
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -35,15 +62,6 @@ header {
   z-index: 100;
 }
 
-.hero {
-  background:
-    linear-gradient(rgba(35, 10, 18, 0.72), rgba(35, 10, 18, 0.82)),
-    url("../img/hero.jpg") center / cover no-repeat;
-  color: white;
-  text-align: center;
-  padding: 100px 20px 120px;
-  position: relative;
-}
 
 .logo {
   font-size: 26px;
@@ -118,16 +136,21 @@ nav a.active {
 .stats {
   background: white;
   width: 700px;
-  margin: -50px auto 0 auto;
+  max-width: 90%; /* Чтобы на мобильных не выходило за экран */
+  margin: -70px auto 0 auto; /* Отрицательный отступ поднимает блок на баннер */
   padding: 25px 0;
   display: flex;
   text-align: center;
   border-radius: 8px 8px 0 0;
+  position: relative;
+  z-index: 10;
+  box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.15); /* Небольшая тень для красоты */
 }
 
 .stats div {
   width: 25%;
   color: #7a6a70;
+  font-size: 13px; /* Текст под цифрой сделать чуть аккуратнее */
 }
 
 .stats b {
@@ -135,6 +158,7 @@ nav a.active {
   font-size: 32px;
   font-family: Georgia, serif;
   color: #a51437;
+  margin-bottom: 4px;
 }
 
 /* Общие блоки */
@@ -328,16 +352,6 @@ section h2 {
 }
 
 /* Galerie */
-.gallery-section {
-  padding: 60px 40px;
-  text-align: center;
-}
-
-.gallery-section h2 {
-  font-size: 32px;
-  margin: 5px 0 25px;
-}
-
 .gallery {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -354,8 +368,28 @@ section h2 {
   border-radius: 5px;
 }
 
-.gallery .gallery-tall {
-  grid-row: span 2;
+/* Левая фотография — на две строки */
+.gallery-left {
+  grid-column: 1;
+  grid-row: 1 / 3;
+}
+
+/* Верхняя фотография по центру */
+.gallery-center-top {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+/* Нижняя фотография по центру */
+.gallery-center-bottom {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+/* Правая фотография — на две строки */
+.gallery-right {
+  grid-column: 3;
+  grid-row: 1 / 3;
 }
 
 .price {
