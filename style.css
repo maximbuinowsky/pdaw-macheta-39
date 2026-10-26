@@ -30,6 +30,9 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .logo {
@@ -175,13 +178,12 @@ section h2 {
 
 /* Карточки */
 .cards {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 25px;
 }
 
 .card {
-  width: 30%;
   text-align: left;
 }
 
