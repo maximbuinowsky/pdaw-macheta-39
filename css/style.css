@@ -35,6 +35,16 @@ header {
   z-index: 100;
 }
 
+.hero {
+  background:
+    linear-gradient(rgba(35, 10, 18, 0.72), rgba(35, 10, 18, 0.82)),
+    url("../img/hero.jpg") center / cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 100px 20px 120px;
+  position: relative;
+}
+
 .logo {
   font-size: 26px;
   font-weight: bold;
@@ -187,6 +197,26 @@ section h2 {
   text-align: left;
 }
 
+.card-image img {
+  display: block;
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.card-label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #a51437;
+  color: white;
+  padding: 5px 9px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: bold;
+}
+
 .card img {
   width: 100%;
   height: 180px;
@@ -208,6 +238,116 @@ section h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+/* Recenzii */
+.reviews {
+  padding: 60px 20px;
+}
+
+.reviews h2 {
+  margin-bottom: 0;
+}
+
+.quote-mark {
+  color: #a51437;
+  font-family: Georgia, serif;
+  font-size: 65px;
+  font-weight: bold;
+  height: 60px;
+  line-height: 1;
+}
+
+.reviews blockquote {
+  max-width: 620px;
+  margin: 10px auto 25px;
+  font-family: Georgia, serif;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.review-author {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  text-align: left;
+}
+
+.avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #a51437;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.review-author strong,
+.review-author span {
+  display: block;
+}
+
+.review-author strong {
+  font-size: 12px;
+}
+
+.review-author span {
+  color: #7a6a70;
+  font-size: 11px;
+  margin-top: 4px;
+}
+
+.review-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 25px;
+}
+
+.review-dots span {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #e5dce0;
+}
+
+.review-dots .selected {
+  background: #a51437;
+}
+
+/* Galerie */
+.gallery-section {
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.gallery-section h2 {
+  font-size: 32px;
+  margin: 5px 0 25px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-rows: repeat(2, 160px);
+  gap: 10px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+  display: block;
+}
+
+.gallery .gallery-tall {
+  grid-row: span 2;
 }
 
 .price {
